@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="assets/css/plugins/magnifying-popup.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @media (min-width: 992px) {
+            .responsive-laptop-img {
+                height: 700px !important;
+            }
+        }
+        @media (max-width: 768px) {
+        .responsive-banner {
+            background-position: center !important;  /* Center image on mobile */
+            padding-top: 100px !important;
+            padding-bottom: 100px !important;
+        }
+}
+
+        </style>
 </head>
 
 <body>
@@ -65,12 +80,12 @@
             <div class="swiper-wrapper">
                 <!-- single swiper -->
                 <div class="swiper-slide">
-                    <div class="banner-wrapper-bg bg-2-banner-2 ptb--180 ptb_sm--100" 
+                    <div class="banner-wrapper-bg bg-2-banner-2 ptb--180 ptb_sm--100 responsive-banner" 
                     style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                           url('assets/images/banner/home1.png'); 
-                           background-size: cover; 
-                           background-position: right; 
-                           background-repeat: no-repeat;">                        
+                            url('assets/images/banner/home1.png'); 
+                            background-size: cover; 
+                            background-position: right; 
+                            background-repeat: no-repeat;">                      
                            <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -93,12 +108,12 @@
                 <!-- single swiper -->
                 <!-- single swiper -->
                 <div class="swiper-slide">
-                    <div class="banner-wrapper-bg bg-2-banner-2 ptb--180 ptb_sm--100" 
+                    <div class="banner-wrapper-bg bg-2-banner-2 ptb--180 ptb_sm--100 responsive-banner" 
                     style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                            url('assets/images/banner/home2.png'); 
                            background-size: cover; 
                            background-position: right; 
-                           background-repeat: no-repeat;">            
+                           background-repeat: no-repeat;">         
                             <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -121,7 +136,7 @@
                 <!-- single swiper -->
                 <!-- single swiper -->
                 <div class="swiper-slide">
-                    <div class="banner-wrapper-bg bg-2-banner-2 ptb--180 ptb_sm--100" 
+                    <div class="banner-wrapper-bg bg-2-banner-2 ptb--180 ptb_sm--100 responsive-banner" 
                     style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                            url('assets/images/banner/home3.png'); 
                            background-size: cover; 
@@ -212,7 +227,7 @@
                 <div class="col-lg-5">
                     <div class="about-image-left-wrapper two">
                         <div class="thumbnail-main move-right wow">
-                            <img src="assets/images/about/About Us.png" alt="about" style="width: 800px;height: 500px;">
+                            <img src="assets/images/about/About Us.png" alt="about" class="img-fluid w-100 h-auto">
                         </div>
                        
                     </div>
@@ -272,10 +287,7 @@
         </div>
     </div>
     <!-- rs about area end -->
-
-
-
-                      
+                    
      <!-- srvice area start -->
      <div class="service-area rts-section-gap bg-light">
         <style>
@@ -546,12 +558,12 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 offset-xl-1">
-                                       
-                                        <div class="thumbnail-image">
-                                            <img src="assets/images/service/icon/ch-right.jpg" alt="medicle" style="width: 800px;height: 700px;">
-                                        </div>
-                                       
-                                </div>
+                                    <div class="thumbnail-image">
+                                        <img src="assets/images/service/icon/ch-right.jpg" alt="medical" 
+                                             style="width: 100%; height: auto; object-fit: cover;"
+                                             class="responsive-laptop-img">
+                                    </div>
+                                </div>                       
                             </div>
                         </div>
                     </div>
